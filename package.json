@@ -3,4 +3,8 @@
     "body-parser": "^1.20.3",
     "express": "^4.21.2"
   }
+  "scripts": {
+  "start": "node server.js",
+  "build": "mkdir dist && cp -r ./src/* ./dist/"
 }
+
