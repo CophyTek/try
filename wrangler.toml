@@ -5,10 +5,12 @@ workers_dev = true
 compatibility_date = "2025-03-24"
 
 [site]
-bucket = "./dist"  # Replace './dist' with the correct directory where your static files are located.
+bucket = "./dist"  # This must match the output directory from your build process
+entry-point = "./src"
 
 [build]
-command = "npm run build" # Specify your build process
+command = "npm run build"
 
 [env]
-pages_build_output_dir = "./login.html" # This is needed for Cloudflare Pages to find the build output.
+pages_build_output_dir = "./login.html"  # Specifies the build output directory
+
