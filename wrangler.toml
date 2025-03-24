@@ -1,9 +1,16 @@
-name = "server"
+name = "try"
 type = "javascript"
 account_id = "aee97446afa4e01297e84715bd34f1ea"
 workers_dev = true
 compatibility_date = "2025-03-24"
 
 [site]
-bucket = "./dist" # Specify the directory containing your built files
-entry-point = "./" # Optional, defaults to "./"
+bucket = "./dist"  # Replace './dist' with the correct directory where your static files are located.
+entry-point = "./" # Optional; specifies the entry point for Workers.
+
+[env]
+pages_build_output_dir = "./login.html" # This is needed for Cloudflare Pages to find the build output.
+
+[build]
+command = "npm run build" # Specify your build process
+
