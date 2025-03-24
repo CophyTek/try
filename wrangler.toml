@@ -1,0 +1,9 @@
+name = "my-website"
+type = "javascript"
+account_id = "your-account-id"
+workers_dev = true
+compatibility_date = "2025-03-24"
+
+[site]
+bucket = "./dist" # Specify the directory containing your built files
+entry-point = "./" # Optional, defaults to "./"
